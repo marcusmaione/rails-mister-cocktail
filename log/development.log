@@ -1,0 +1,185 @@
+Started GET "/new" for 127.0.0.1 at 2019-03-01 15:03:05 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.3.0) lib/webpacker/dev_server_proxy.rb:18:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-03-01 15:03:07 -0300
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (3903.0ms)
+[Webpacker] Compiling…
+Started GET "/" for 127.0.0.1 at 2019-03-01 15:03:11 -0300
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.3ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (7.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Hash: 8bfe58e5109861f157df
+Version: webpack 3.11.0
+Time: 778ms
+                                  Asset       Size  Chunks                    Chunk Names
+    application-1e11f26a00a333f2e5f9.js     501 kB       0  [emitted]  [big]  application
+application-1e11f26a00a333f2e5f9.js.map     631 kB       0  [emitted]         application
+                          manifest.json  142 bytes          [emitted]         
+   [1] ./app/javascript/packs/application.js 91 bytes {0} [built]
+    + 20 hidden modules
+
+ERROR in ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./node_modules/select2/dist/css/select2.css
+Module build failed: Error: No PostCSS Config found in: /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/.postcssrc.yml
+    at /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/postcss-load-config/index.js:51:26
+    at <anonymous>
+ @ ./node_modules/select2/dist/css/select2.css 2:14-126
+ @ ./app/javascript/components/select.js
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./node_modules/select2/dist/css/select2.css
+Module build failed: ModuleBuildError: Module build failed: Error: No PostCSS Config found in: /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/.postcssrc.yml
+    at /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/postcss-load-config/index.js:51:26
+    at <anonymous>
+    at runLoaders (/home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/webpack/lib/NormalModule.js:195:19)
+    at /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/loader-runner/lib/LoaderRunner.js:364:11
+    at /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/loader-runner/lib/LoaderRunner.js:230:18
+    at context.callback (/home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at Promise.resolve.then.then.catch (/home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/postcss-loader/lib/index.js:196:71)
+    at <anonymous>
+ @ ./node_modules/select2/dist/css/select2.css
+ @ ./app/javascript/components/select.js
+ @ ./app/javascript/packs/application.js
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!node_modules/select2/dist/css/select2.css:
+       1 module
+    
+    ERROR in ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./node_modules/select2/dist/css/select2.css
+    Module build failed: Error: No PostCSS Config found in: /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/.postcssrc.yml
+        at /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/postcss-load-config/index.js:51:26
+        at <anonymous>
+
+
+Completed 500 Internal Server Error in 5397ms (ActiveRecord: 5.5ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.css in /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-1e11f26a00a333f2e5f9.js",
+  "application.js.map": "/packs/application-1e11f26a00a333f2e5f9.js.map"
+}
+):
+    13:   <body>
+    14:     <%= yield %>
+    15:     <%= javascript_pack_tag "application" %>
+    16:     <%= stylesheet_pack_tag "application" %>
+    17:   </body>
+    18: </html>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___671599208139600122_47205650444300'
+[Webpacker] Compilation failed:
+Hash: 8bfe58e5109861f157df
+Version: webpack 3.11.0
+Time: 739ms
+                                  Asset       Size  Chunks                    Chunk Names
+    application-1e11f26a00a333f2e5f9.js     501 kB       0  [emitted]  [big]  application
+application-1e11f26a00a333f2e5f9.js.map     631 kB       0  [emitted]         application
+                          manifest.json  142 bytes          [emitted]         
+   [1] ./app/javascript/packs/application.js 91 bytes {0} [built]
+    + 20 hidden modules
+
+ERROR in ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./node_modules/select2/dist/css/select2.css
+Module build failed: Error: No PostCSS Config found in: /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/.postcssrc.yml
+    at /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/postcss-load-config/index.js:51:26
+    at <anonymous>
+ @ ./node_modules/select2/dist/css/select2.css 2:14-126
+ @ ./app/javascript/components/select.js
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./node_modules/select2/dist/css/select2.css
+Module build failed: ModuleBuildError: Module build failed: Error: No PostCSS Config found in: /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/.postcssrc.yml
+    at /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/postcss-load-config/index.js:51:26
+    at <anonymous>
+    at runLoaders (/home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/webpack/lib/NormalModule.js:195:19)
+    at /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/loader-runner/lib/LoaderRunner.js:364:11
+    at /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/loader-runner/lib/LoaderRunner.js:230:18
+    at context.callback (/home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at Promise.resolve.then.then.catch (/home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/postcss-loader/lib/index.js:196:71)
+    at <anonymous>
+ @ ./node_modules/select2/dist/css/select2.css
+ @ ./app/javascript/components/select.js
+ @ ./app/javascript/packs/application.js
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!node_modules/select2/dist/css/select2.css:
+       1 module
+    
+    ERROR in ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./node_modules/select2/dist/css/select2.css
+    Module build failed: Error: No PostCSS Config found in: /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/.postcssrc.yml
+        at /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/node_modules/postcss-load-config/index.js:51:26
+        at <anonymous>
+
+
+Completed 500 Internal Server Error in 1445ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (Webpacker can't find application.css in /home/marcus/code/marcusmaione/fullstack-challenges/05-Rails/05-Rails-MC-with-images/02-Mister-Cocktail-Images/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/application-1e11f26a00a333f2e5f9.js",
+  "application.js.map": "/packs/application-1e11f26a00a333f2e5f9.js.map"
+}
+):
+    13:   <body>
+    14:     <%= yield %>
+    15:     <%= javascript_pack_tag "application" %>
+    16:     <%= stylesheet_pack_tag "application" %>
+    17:   </body>
+    18: </html>
+  
+app/views/layouts/application.html.erb:16:in `_app_views_layouts_application_html_erb___671599208139600122_69985554153820'
+Started GET "/" for 127.0.0.1 at 2019-03-01 15:05:02 -0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (673.7ms)
+Completed 200 OK in 711ms (Views: 700.0ms | ActiveRecord: 2.5ms)
+
+
