@@ -183,3 +183,54 @@ Processing by CocktailsController#index as HTML
 Completed 200 OK in 711ms (Views: 700.0ms | ActiveRecord: 2.5ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-03-01 15:26:28 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CocktailsController#index as HTML
+  Rendering cocktails/index.html.erb within layouts/application
+  [1m[36mCocktail Load (0.4ms)[0m  [1m[34mSELECT "cocktails".* FROM "cocktails"[0m
+  Rendered cocktails/index.html.erb within layouts/application (631.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+Hash: 4c09e84bcd5a8688082b
+Version: webpack 3.11.0
+Time: 693ms
+                                  Asset       Size  Chunks                    Chunk Names
+    application-c78921d8f7f237282170.js     500 kB       0  [emitted]  [big]  application
+application-c78921d8f7f237282170.js.map     631 kB       0  [emitted]         application
+                          manifest.json  142 bytes          [emitted]         
+   [1] ./app/javascript/packs/application.js 91 bytes {0} [built]
+    + 20 hidden modules
+
+ERROR in ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./node_modules/select2/dist/css/select2.css
+Module build failed: Error: No PostCSS Config found in: /home/marcus/code/marcusmaione/rails-mister-cocktail/.postcssrc.yml
+    at /home/marcus/code/marcusmaione/rails-mister-cocktail/node_modules/postcss-load-config/index.js:51:26
+    at <anonymous>
+ @ ./node_modules/select2/dist/css/select2.css 2:14-126
+ @ ./app/javascript/components/select.js
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./node_modules/select2/dist/css/select2.css
+Module build failed: ModuleBuildError: Module build failed: Error: No PostCSS Config found in: /home/marcus/code/marcusmaione/rails-mister-cocktail/.postcssrc.yml
+    at /home/marcus/code/marcusmaione/rails-mister-cocktail/node_modules/postcss-load-config/index.js:51:26
+    at <anonymous>
+    at runLoaders (/home/marcus/code/marcusmaione/rails-mister-cocktail/node_modules/webpack/lib/NormalModule.js:195:19)
+    at /home/marcus/code/marcusmaione/rails-mister-cocktail/node_modules/loader-runner/lib/LoaderRunner.js:364:11
+    at /home/marcus/code/marcusmaione/rails-mister-cocktail/node_modules/loader-runner/lib/LoaderRunner.js:230:18
+    at context.callback (/home/marcus/code/marcusmaione/rails-mister-cocktail/node_modules/loader-runner/lib/LoaderRunner.js:111:13)
+    at Promise.resolve.then.then.catch (/home/marcus/code/marcusmaione/rails-mister-cocktail/node_modules/postcss-loader/lib/index.js:196:71)
+    at <anonymous>
+ @ ./node_modules/select2/dist/css/select2.css
+ @ ./app/javascript/components/select.js
+ @ ./app/javascript/packs/application.js
+Child extract-text-webpack-plugin node_modules/extract-text-webpack-plugin/dist node_modules/css-loader/index.js??ref--1-2!node_modules/postcss-loader/lib/index.js??ref--1-3!node_modules/select2/dist/css/select2.css:
+       1 module
+    
+    ERROR in ./node_modules/css-loader??ref--1-2!./node_modules/postcss-loader/lib??ref--1-3!./node_modules/select2/dist/css/select2.css
+    Module build failed: Error: No PostCSS Config found in: /home/marcus/code/marcusmaione/rails-mister-cocktail/.postcssrc.yml
+        at /home/marcus/code/marcusmaione/rails-mister-cocktail/node_modules/postcss-load-config/index.js:51:26
+        at <anonymous>
+
+
+Completed 200 OK in 1952ms (Views: 1941.1ms | ActiveRecord: 2.9ms)
+
+
